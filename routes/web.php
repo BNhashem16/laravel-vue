@@ -17,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/hooks', 'HomeController@index');
 Route::get('/' , 'HomeController@index');
 Route::get('/new' , 'HomeController@index');
+Route::get('/methods', 'HomeController@index');
+
 
 Auth::routes();
 
